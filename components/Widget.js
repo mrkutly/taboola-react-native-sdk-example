@@ -11,7 +11,7 @@ const Widget = props => {
 			placement="Mid Article"
 			targetType="mix"
 			scrollEnabled={false}
-			style={{ height: 250 }}
+			style={{ height: 300 }}
 		/>
 	);
 };

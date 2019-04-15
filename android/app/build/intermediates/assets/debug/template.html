@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, user-scalable=no'/>
+    <script type="text/javascript">
+        !function (e, f, u, i) {
+            if (!document.getElementById(i)) {
+                e.async = 1;
+                e.src = u;
+                e.id = i;
+                f.parentNode.insertBefore(e, f);
+            }
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            'https://cdn.taboola.com/libtrc/%s/mobile-loader.js',
+            'tb-mobile-loader-script');
+    </script>
+    <link rel="shortcut icon" href="#"/>
+</head>
+
+<body style='margin:0;padding:2px;border:0px blue solid;overflow:visible;%s'>
+
+<div id='taboola1'>
+</div>
+
+<script type='text/javascript'>
+           var progressBar = document.getElementById('taboola-progressbar-line-foreground');
+
+           var onTouchListener = function(){ // listens to user touch events
+             document.addEventListener("touchend", handleTouch);
+             document.addEventListener("touchmove", handleTouch);
+           }
+
+            var handleTouch = function() { // remove progressbar when user touch
+                var wrapper = document.getElementById('taboola-progressbar');
+                if (wrapper.classList.contains("taboola-progressbar-hide")) {
+                      wrapper.classList.remove("taboola-progressbar-hide");
+                }
+              wrapper.style.display = "none";
+            }
+
+           var hideProgressBar = function() { // hide progressbar with animation
+             document.removeEventListener("touchend", hideProgressBar);
+             document.removeEventListener("touchmove", hideProgressBar);
+
+             var wrapper = document.getElementById('taboola-progressbar');
+
+            var removeAnimationClass = function(element){ // progressbar exit animation ended. removing class and changing display property to none.
+                return function() {
+                    element.classList.remove('taboola-progressbar-hide');
+                    element.style.display = "none";
+                    element.removeEventListener("animationend", removeCallback);
+                    element.removeEventListener("webkitAnimationEnd", removeCallback);
+                }
+            }
+            var removeCallback = removeAnimationClass(wrapper);
+
+            var addAnimationClass = function(element){ // listens to when progress reaches 100
+                return function() {
+                    element.removeEventListener("animationstart", addCallback);
+                    element.removeEventListener("webkitAnimationStart", addCallback);
+                    element.addEventListener("animationend", removeCallback);
+                    element.addEventListener("webkitAnimationEnd", removeCallback);
+                }
+            }
+            var addCallback = addAnimationClass(wrapper);
+
+            wrapper.addEventListener("animationstart", addCallback);
+            wrapper.addEventListener("webkitAnimationStart", addCallback);
+            wrapper.classList.add('taboola-progressbar-hide'); // showing the exit animation
+           };
+
+           progressBar.addEventListener("webkitAnimationStart", onTouchListener);
+           progressBar.addEventListener("animationstart", onTouchListener);
+
+           progressBar.addEventListener("webkitAnimationEnd", hideProgressBar);
+           progressBar.addEventListener("animationend", hideProgressBar);
+
+
+           var taboolaProgressBarShow = function() {
+               document.getElementById('taboola-progressbar').style.display='block';
+           }
+    </script>
+
+<script type='text/javascript'>
+    window._taboola = window._taboola || [];
+        %s <!--commandsString-->
+
+    _taboola.push({
+        %s: '%s', <!--mPageType, mPageId-->
+        url: '%s' <!--mPageUrl-->
+    });
+
+    _taboola.push({
+        mode: '%s',
+        container: 'taboola1',
+        placement: '%s',
+        framework: '%s',
+        target_type: '%s'
+    });
+
+    _taboola["mobile"] = [];
+    _taboola["mobile"].push({
+        publisher:"%s",
+        // set view id in order to prevent duplicated between different placements (optional)
+        taboola_view_id:%s
+    });
+
+    _taboola.push({
+        flush: true
+    });
+
+</script>
+
+</body>
+</html>
