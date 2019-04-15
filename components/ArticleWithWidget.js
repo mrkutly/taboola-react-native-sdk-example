@@ -9,9 +9,17 @@ const StyledText = styled.Text`
 	margin-bottom: 20;
 `;
 
-const Article = props => {
+const Header = styled.Text`
+	font-size: 26;
+	font-weight: 600;
+	margin-bottom: 10;
+	margin-top: 10;
+`;
+
+const ArticleWithWidget = props => {
 	return (
 		<View>
+			<Header>Here's some Taboola!</Header>
 			<StyledText>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -41,4 +49,4 @@ const Article = props => {
 	);
 };
 
-export default Article;
+export default ArticleWithWidget;
