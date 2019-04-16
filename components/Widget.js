@@ -4,14 +4,14 @@ import RNTaboolaView from '@taboola/react-native-taboola';
 const Widget = props => {
 	return (
 		<RNTaboolaView
-			mode="alternating-widget-without-video-1-on-1"
-			publisher="sdk-tester"
-			pageType="article"
-			pageUrl="https://blog.taboola.com"
-			placement="Mid Article"
-			targetType="mix"
+			mode={props.mode}
+			publisher={props.publisher}
+			pageType={props.pageType}
+			pageUrl={props.pageUrl}
+			placement={props.placement}
+			targetType={props.targetType}
 			scrollEnabled={false}
-			style={{ height: 300 }}
+			style={{ height: props.height }}
 		/>
 	);
 };

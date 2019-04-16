@@ -32,7 +32,15 @@ const ArticleWithWidget = props => {
 					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 					culpa qui officia deserunt mollit anim id est laborum.
 				</StyledText>
-				<Widget />
+				<Widget
+					mode="alternating-widget-without-video-1-on-1"
+					publisher="sdk-tester"
+					pageType="article"
+					pageUrl="https://blog.taboola.com"
+					placement="Mid Article"
+					targetType="mix"
+					height={300}
+				/>
 				<StyledText>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
