@@ -77418,8 +77418,6 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _WidgetForm = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14], "./components/WidgetForm"));
 
-  var _WidgetTestPage = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[15], "./components/WidgetTestPage"));
-
   var _jsxFileName = "/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/App.js";
 
   function _templateObject() {
@@ -77473,18 +77471,18 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       }
     }, {
       key: "setWidgetParams",
-      value: function setWidgetParams(params) {
+      value: function setWidgetParams(widgetParams) {
         this.setState({
-          currentPage: 'WidgetTestPage',
-          widgetParams: params
+          widgetParams: widgetParams,
+          currentPage: 'WidgetTestPage'
         });
       }
     }, {
       key: "setWidgetParams",
-      value: function setWidgetParams(params) {
+      value: function setWidgetParams(feedParams) {
         this.setState({
           currentPage: 'FeedTestPage',
-          feedParams: params
+          feedParams: feedParams
         });
       }
     }, {
@@ -77500,7 +77498,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 42
+                lineNumber: 41
               }
             });
 
@@ -77511,7 +77509,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 44
+                lineNumber: 43
               }
             });
 
@@ -77525,19 +77523,19 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 47
+                lineNumber: 46
               }
             });
 
           case 'WidgetTestPage':
-            return _react.default.createElement(_WidgetTestPage.default, (0, _extends2.default)({
+            return _react.default.createElement(WidgetTestPage, (0, _extends2.default)({
               back: function back() {
                 return _this2.back();
               }
             }, this.state.widgetParams, {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 54
+                lineNumber: 53
               }
             }));
 
@@ -77548,7 +77546,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 60
+                lineNumber: 59
               }
             });
         }
@@ -77559,12 +77557,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         return _react.default.createElement(Container, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 65
           }
         }, _react.default.createElement(_reactNative.ScrollView, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 66
           }
         }, this.renderSwitch()));
       }
@@ -77574,7 +77572,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = App;
   exports.default = _default;
-},381,[1,8,19,20,27,30,33,382,46,2,383,398,401,404,407,408],"App.js");
+},381,[1,8,19,20,27,30,33,382,46,2,383,398,401,404,407],"App.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _taggedTemplateLiteralLoose(strings, raw) {
     if (!raw) {
@@ -85054,25 +85052,57 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   });
   exports.default = void 0;
 
-  var _objectSpread2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/objectSpread"));
+  var _extends2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/extends"));
 
-  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/classCallCheck"));
+  var _objectSpread2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/objectSpread"));
 
-  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/createClass"));
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/classCallCheck"));
 
-  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/possibleConstructorReturn"));
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/createClass"));
 
-  var _getPrototypeOf3 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/getPrototypeOf"));
+  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/possibleConstructorReturn"));
 
-  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/inherits"));
+  var _getPrototypeOf3 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/getPrototypeOf"));
 
-  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[8], "react"));
+  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[8], "@babel/runtime/helpers/inherits"));
 
-  var _reactNative = _$$_REQUIRE(_dependencyMap[9], "react-native");
+  var _taggedTemplateLiteralLoose2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[9], "@babel/runtime/helpers/taggedTemplateLiteralLoose"));
 
-  var _ArticleWithFeed = _$$_REQUIRE(_dependencyMap[10], "./ArticleWithFeed");
+  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[10], "react"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[11], "react-native");
+
+  var _styledComponents = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12], "styled-components"));
+
+  var _ArticleWithFeed = _$$_REQUIRE(_dependencyMap[13], "./ArticleWithFeed");
+
+  var _Widget = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14], "./Widget"));
 
   var _jsxFileName = "/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/components/WidgetForm.js";
+
+  function _templateObject2() {
+    var data = (0, _taggedTemplateLiteralLoose2.default)(["\n\tfont-size: 20;\n"]);
+
+    _templateObject2 = function _templateObject2() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject() {
+    var data = (0, _taggedTemplateLiteralLoose2.default)(["\n\tfont-size: 20;\n\ttext-decoration-line: underline;\n"]);
+
+    _templateObject = function _templateObject() {
+      return data;
+    };
+
+    return data;
+  }
+
+  var Input = _styledComponents.default.TextInput(_templateObject());
+
+  var Label = _styledComponents.default.Text(_templateObject2());
 
   var WidgetForm = function (_Component) {
     (0, _inherits2.default)(WidgetForm, _Component);
@@ -85090,13 +85120,16 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
       _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(WidgetForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
       _this.state = {
-        publisher: '',
-        mode: '',
-        placement: '',
-        pageUrl: '',
-        pageType: 'article',
-        targetType: 'mix',
-        height: '300'
+        widgetParams: {
+          publisher: 'sdk-tester',
+          mode: 'alternating-widget-without-video-1-on-1',
+          placement: 'Mid Article',
+          pageUrl: 'https://blog.taboola.com',
+          pageType: 'article',
+          targetType: 'mix',
+          height: '300'
+        },
+        widget: null
       };
 
       _this.onChangeNumber = function (text) {
@@ -85108,7 +85141,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
             valid = false;
           }
         });
-        if (valid) _this.setState({
+        if (valid) _this.setWidgetParam({
           height: text
         });
       };
@@ -85117,30 +85150,36 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     }
 
     (0, _createClass2.default)(WidgetForm, [{
-      key: "submit",
-      value: function submit() {
-        var widgetParams = (0, _objectSpread2.default)({}, this.state, {
-          height: parseInt(this.state.height)
+      key: "setWidgetParam",
+      value: function setWidgetParam(param) {
+        this.setState(function (prevState) {
+          return (0, _objectSpread2.default)({}, prevState, {
+            widgetParams: (0, _objectSpread2.default)({}, prevState.widgetParams, param)
+          });
         });
-        this.props.setWidgetParams(widgetParams);
       }
     }, {
       key: "render",
       value: function render() {
         var _this2 = this;
 
-        var _this$state = this.state,
-            publisher = _this$state.publisher,
-            mode = _this$state.mode,
-            pageType = _this$state.pageType,
-            pageUrl = _this$state.pageUrl,
-            placement = _this$state.placement,
-            targetType = _this$state.targetType,
-            height = _this$state.height;
+        var _this$state$widgetPar = this.state.widgetParams,
+            publisher = _this$state$widgetPar.publisher,
+            mode = _this$state$widgetPar.mode,
+            pageType = _this$state$widgetPar.pageType,
+            pageUrl = _this$state$widgetPar.pageUrl,
+            placement = _this$state$widgetPar.placement,
+            targetType = _this$state$widgetPar.targetType,
+            height = _this$state$widgetPar.height;
         return _react.default.createElement(_reactNative.View, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 68
+          }
+        }, _react.default.createElement(_reactNative.ScrollView, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 69
           }
         }, _react.default.createElement(_ArticleWithFeed.BackButton, {
           onPress: function onPress(e) {
@@ -85149,133 +85188,147 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           title: "Back",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 70
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 71
           }
-        }, "Publisher"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Publisher"), _react.default.createElement(Input, {
           value: publisher,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               publisher: text
             });
           },
           placeholder: "sdk-tester",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 72
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 77
           }
-        }, "Mode"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Mode"), _react.default.createElement(Input, {
           value: mode,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               mode: text
             });
           },
           placeholder: "thumbnails-a",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
+            lineNumber: 78
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 83
           }
-        }, "Placement"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Placement"), _react.default.createElement(Input, {
           value: placement,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               placement: text
             });
           },
           placeholder: "Mid Article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 84
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 89
           }
-        }, "Example Page Url"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Example Page Url"), _react.default.createElement(Input, {
           value: pageUrl,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               pageUrl: text
             });
           },
           placeholder: "https://blog.taboola.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 90
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 76
+            lineNumber: 95
           }
-        }, "Page Type"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Page Type"), _react.default.createElement(Input, {
           value: pageType,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               pageType: text
             });
           },
           placeholder: "article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 96
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 82
+            lineNumber: 101
           }
-        }, "Target Type"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Target Type"), _react.default.createElement(Input, {
           value: targetType,
           onChangeText: function onChangeText(text) {
-            return _this2.setState({
+            return _this2.setWidgetParam({
               targetType: text
             });
           },
           placeholder: "targetType",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 102
           }
-        }), _react.default.createElement(_reactNative.Text, {
+        }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 88
+            lineNumber: 107
           }
-        }, "Height"), _react.default.createElement(_reactNative.TextInput, {
+        }, "Height"), _react.default.createElement(Input, {
           value: height,
           onChangeText: this.onChangeNumber,
           placeholder: "300",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 108
           }
         }), _react.default.createElement(_reactNative.Button, {
           onPress: function onPress(e) {
-            return _this2.submit();
+            return _this2.setState({
+              widget: null
+            }, function () {
+              _this2.setState(function (prevState) {
+                return (0, _objectSpread2.default)({}, prevState, {
+                  widget: _react.default.createElement(_Widget.default, (0, _extends2.default)({}, prevState.widgetParams, {
+                    height: parseInt(prevState.widgetParams.height),
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 120
+                    }
+                  }))
+                });
+              });
+            });
           },
           title: "Submit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 113
           }
-        }));
+        }), this.state.widget));
       }
     }]);
     return WidgetForm;
@@ -85283,58 +85336,6 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = WidgetForm;
   exports.default = _default;
-},407,[1,402,43,19,20,27,30,33,46,2,401],"components/WidgetForm.js");
-__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
-  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = void 0;
-
-  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "react"));
-
-  var _reactNativeTaboola = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@taboola/react-native-taboola"));
-
-  var _ArticleWithFeed = _$$_REQUIRE(_dependencyMap[3], "./ArticleWithFeed");
-
-  var _jsxFileName = "/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/components/WidgetTestPage.js";
-
-  var Widget = function Widget(props) {
-    return _react.default.createElement(View, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      }
-    }, _react.default.createElement(_ArticleWithFeed.BackButton, {
-      onPress: function onPress(e) {
-        return props.back();
-      },
-      title: "Back",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      }
-    }), _react.default.createElement(_reactNativeTaboola.default, {
-      mode: props.mode,
-      publisher: props.publisher,
-      pageType: props.pageType,
-      pageUrl: props.pageUrl,
-      placement: props.placement,
-      targetType: props.targetType,
-      scrollEnabled: false,
-      style: {
-        height: props.height
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      }
-    }));
-  };
-
-  var _default = Widget;
-  exports.default = _default;
-},408,[1,46,400,401],"components/WidgetTestPage.js");
+},407,[1,402,8,43,19,20,27,30,33,382,46,2,383,401,399],"components/WidgetForm.js");
 __r(85);
 __r(0);

@@ -5,7 +5,6 @@ import ArticleWithWidget from './components/ArticleWithWidget';
 import ArticleWithFeed from './components/ArticleWithFeed';
 import HomePage from './components/HomePage';
 import WidgetForm from './components/WidgetForm';
-import WidgetTestPage from './components/WidgetTestPage';
 
 const Container = styled.View`
 	background-color: #fff;
@@ -28,12 +27,12 @@ class App extends React.Component {
 		this.setState({ currentPage });
 	}
 
-	setWidgetParams(params) {
-		this.setState({ currentPage: 'WidgetTestPage', widgetParams: params });
+	setWidgetParams(widgetParams) {
+		this.setState({ widgetParams, currentPage: 'WidgetTestPage' });
 	}
 
-	setWidgetParams(params) {
-		this.setState({ currentPage: 'FeedTestPage', feedParams: params });
+	setWidgetParams(feedParams) {
+		this.setState({ currentPage: 'FeedTestPage', feedParams });
 	}
 
 	renderSwitch() {
