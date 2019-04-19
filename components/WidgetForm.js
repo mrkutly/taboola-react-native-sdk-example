@@ -74,8 +74,12 @@ class WidgetForm extends Component {
 			<View>
 				<ScrollView>
 					<BackButton onPress={e => this.props.back()} title="Back" />
-					{this.state.widget && <Header>Here's your widget!</Header>}
-					{this.state.widget}
+					{this.state.widget && (
+						<>
+							<Header>Here's your widget!</Header>
+							<ScrollView>{this.state.widget}</ScrollView>
+						</>
+					)}
 					<Label>Publisher</Label>
 					<CustomTextInput
 						value={publisher}

@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>22A14F7E-4F28-461B-9DC1-8433F0A02199</key>
+		<key>F6D22EB1-50C9-453F-A327-FD8ABB1BCC37</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>22A14F7E-4F28-461B-9DC1-8433F0A02199.xcactivitylog</string>
+			<string>F6D22EB1-50C9-453F-A327-FD8ABB1BCC37.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,42 +27,13 @@
 			<key>signature</key>
 			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>577390083.23956895</real>
+			<real>577394921.20182705</real>
 			<key>timeStoppedRecording</key>
-			<real>577390089.10477805</real>
+			<real>577394925.17720497</real>
 			<key>title</key>
 			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>22A14F7E-4F28-461B-9DC1-8433F0A02199</string>
-		</dict>
-		<key>D2312704-2E1D-48E7-8D9D-003EA346EB47</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D2312704-2E1D-48E7-8D9D-003EA346EB47.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>W</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>taboola project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>taboola</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>577392151.52214003</real>
-			<key>timeStoppedRecording</key>
-			<real>577392253.30111897</real>
-			<key>title</key>
-			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>D2312704-2E1D-48E7-8D9D-003EA346EB47</string>
+			<string>F6D22EB1-50C9-453F-A327-FD8ABB1BCC37</string>
 		</dict>
 	</dict>
 </dict>
