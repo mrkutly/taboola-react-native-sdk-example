@@ -1,22 +1,10 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Widget from './Widget';
-import { BackButton } from './ArticleWithFeed';
-
-const StyledText = styled.Text`
-	font-size: 16;
-	margin-top: 20;
-	margin-bottom: 20;
-`;
-
-const Header = styled.Text`
-	font-size: 26;
-	font-weight: 600;
-	margin-bottom: 10;
-	margin-top: 10;
-`;
+import BackButton from './styles/BackButton';
+import StyledText from './styles/StyledText';
+import Header from './styles/Header';
 
 const ArticleWithWidget = props => {
 	return (

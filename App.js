@@ -1,17 +1,11 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import styled from 'styled-components';
 import ArticleWithWidget from './components/ArticleWithWidget';
 import ArticleWithFeed from './components/ArticleWithFeed';
 import HomePage from './components/HomePage';
 import WidgetForm from './components/WidgetForm';
 import FeedForm from './components/FeedForm';
-
-const Container = styled.View`
-	background-color: #fff;
-	margin-top: 30;
-	justify-content: center;
-`;
+import Container from './components/styles/Container';
 
 class App extends React.Component {
 	state = {

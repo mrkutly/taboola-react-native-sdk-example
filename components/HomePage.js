@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { View, Animated } from 'react-native';
-import styled from 'styled-components';
+import { View } from 'react-native';
 import TaboolaLogo from './TaboolaLogo';
-
-const NavButton = styled.Button`
-	font-size: 20;
-`;
+import NavButton from './styles/NavButton';
 
 export default class HomePage extends Component {
 	render() {

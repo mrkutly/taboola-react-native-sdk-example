@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Button } from 'react-native';
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { BackButton } from './ArticleWithFeed';
 import Feed from './Feed';
 import CustomTextInput from './CustomTextInput';
-
-const Label = styled.Text`
-	font-size: 20;
-`;
+import Label from './styles/Label';
+import BackButton from './styles/BackButton';
 
 class FeedForm extends Component {
 	static propTypes = {
