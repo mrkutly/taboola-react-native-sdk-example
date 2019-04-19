@@ -11,7 +11,7 @@ const ArticleWithWidget = props => {
 		<View>
 			<BackButton onPress={e => props.back()} title="Back" />
 			<ScrollView>
-				<Header>Here's some Taboola!</Header>
+				<Header>Here's a Taboola Feed</Header>
 				<StyledText>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
