@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
-import { Animated } from 'react-native';
+import React from 'react';
 import styled from 'styled-components';
 import Logo from '../assets/taboola-logo.png';
 
-const StyledImage = styled(Animated.Image)`
+const StyledImage = styled.Image`
 	justify-content: center;
 	align-self: center;
 `;
 
-export default class TaboolaLogo extends Component {
-	state = {
-		spin: new Animated.Value(0),
-	};
+const TaboolaLogo = props => <StyledImage source={Logo} />;
 
-	render() {
-		return <StyledImage source={Logo} />;
-	}
-}
+export default TaboolaLogo;
