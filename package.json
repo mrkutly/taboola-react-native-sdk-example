@@ -14,8 +14,6 @@
 		"react-native": "0.57.1",
 		"styled-components": "^4.2.0"
 	},
-	"devDependencies": {
-		"babel-preset-expo": "^5.0.0"
-	},
+	"devDependencies": {},
 	"private": true
 }
