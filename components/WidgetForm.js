@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Button, StyleSheet } from 'react-native';
+import { View, ScrollView, Button } from 'react-native';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { BackButton } from './ArticleWithFeed';
 import Widget from './Widget';
-
-const Input = styled.TextInput`
-	font-size: 20;
-`;
+import CustomTextInput from './CustomTextInput';
 
 const Label = styled.Text`
 	font-size: 20;
@@ -73,43 +70,43 @@ class WidgetForm extends Component {
 				<ScrollView>
 					<BackButton onPress={e => this.props.back()} title="Back" />
 					<Label>Publisher</Label>
-					<Input
+					<CustomTextInput
 						value={publisher}
 						onChangeText={text => this.setWidgetParam({ publisher: text })}
 						placeholder="sdk-tester"
 					/>
 					<Label>Mode</Label>
-					<Input
+					<CustomTextInput
 						value={mode}
 						onChangeText={text => this.setWidgetParam({ mode: text })}
 						placeholder="thumbnails-a"
 					/>
 					<Label>Placement</Label>
-					<Input
+					<CustomTextInput
 						value={placement}
 						onChangeText={text => this.setWidgetParam({ placement: text })}
 						placeholder="Mid Article"
 					/>
 					<Label>Example Page Url</Label>
-					<Input
+					<CustomTextInput
 						value={pageUrl}
 						onChangeText={text => this.setWidgetParam({ pageUrl: text })}
 						placeholder="https://blog.taboola.com"
 					/>
 					<Label>Page Type</Label>
-					<Input
+					<CustomTextInput
 						value={pageType}
 						onChangeText={text => this.setWidgetParam({ pageType: text })}
 						placeholder="article"
 					/>
 					<Label>Target Type</Label>
-					<Input
+					<CustomTextInput
 						value={targetType}
 						onChangeText={text => this.setWidgetParam({ targetType: text })}
 						placeholder="targetType"
 					/>
 					<Label>Height</Label>
-					<Input
+					<CustomTextInput
 						value={height}
 						onChangeText={this.onChangeNumber}
 						placeholder="300"

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View, Animated } from 'react-native';
 import styled from 'styled-components';
 import TaboolaLogo from './TaboolaLogo';
-import WidgetForm from './WidgetForm';
 
 const NavButton = styled.Button`
 	font-size: 20;

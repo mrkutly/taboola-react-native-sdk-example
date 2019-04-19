@@ -4,11 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { BackButton } from './ArticleWithFeed';
 import Feed from './Feed';
-
-const Input = styled.TextInput`
-	font-size: 20;
-	text-decoration-line: underline;
-`;
+import CustomTextInput from './CustomTextInput';
 
 const Label = styled.Text`
 	font-size: 20;
@@ -59,37 +55,37 @@ class FeedForm extends Component {
 				<ScrollView>
 					<BackButton onPress={e => this.props.back()} title="Back" />
 					<Label>Publisher</Label>
-					<Input
+					<CustomTextInput
 						value={publisher}
 						onChangeText={text => this.setFeedParam({ publisher: text })}
 						placeholder="sdk-tester"
 					/>
 					<Label>Mode</Label>
-					<Input
+					<CustomTextInput
 						value={mode}
 						onChangeText={text => this.setFeedParam({ mode: text })}
 						placeholder="thumbnails-a"
 					/>
 					<Label>Placement</Label>
-					<Input
+					<CustomTextInput
 						value={placement}
 						onChangeText={text => this.setFeedParam({ placement: text })}
 						placeholder="Feed with video"
 					/>
 					<Label>Example Page Url</Label>
-					<Input
+					<CustomTextInput
 						value={pageUrl}
 						onChangeText={text => this.setFeedParam({ pageUrl: text })}
 						placeholder="https://blog.taboola.com"
 					/>
 					<Label>Page Type</Label>
-					<Input
+					<CustomTextInput
 						value={pageType}
 						onChangeText={text => this.setFeedParam({ pageType: text })}
 						placeholder="article"
 					/>
 					<Label>Target Type</Label>
-					<Input
+					<CustomTextInput
 						value={targetType}
 						onChangeText={text => this.setFeedParam({ targetType: text })}
 						placeholder="targetType"
