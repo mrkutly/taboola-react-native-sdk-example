@@ -11,14 +11,22 @@ const SubmitButtonOuterContainer = styled.View`
 
 const SubmitButtonInnerContainer = styled.View`
 	width: 150;
-	border-color: ${Platform.OS === 'ios' ? '#0875ff' : 'white'};
+	border-color: ${props => {
+		if (props.disabled) {
+			return 'aliceblue';
+		} else if (Platform.OS === 'ios') {
+			return '#0875ff';
+		} else {
+			return 'white';
+		}
+	}};
 	border-width: 1;
 	border-radius: 5;
 `;
 
 const SubmitButton = props => (
 	<SubmitButtonOuterContainer>
-		<SubmitButtonInnerContainer>
+		<SubmitButtonInnerContainer disabled={props.disabled}>
 			<Button {...props} />
 		</SubmitButtonInnerContainer>
 	</SubmitButtonOuterContainer>

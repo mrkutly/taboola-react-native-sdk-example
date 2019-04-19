@@ -5,6 +5,18 @@ import Widget from './Widget';
 import CustomTextInput from './CustomTextInput';
 import Label from './styles/Label';
 import BackButton from './styles/BackButton';
+import SubmitButton from './styles/SubmitButton';
+import Header from './styles/Header';
+
+const initialWidgetParams = {
+	publisher: '',
+	mode: '',
+	placement: '',
+	pageUrl: '',
+	pageType: 'article',
+	targetType: 'mix',
+	height: '300',
+};
 
 class WidgetForm extends Component {
 	static propTypes = {
@@ -12,17 +24,14 @@ class WidgetForm extends Component {
 	};
 
 	state = {
-		widgetParams: {
-			publisher: '',
-			mode: '',
-			placement: '',
-			pageUrl: '',
-			pageType: 'article',
-			targetType: 'mix',
-			height: '600',
-		},
+		widgetParams: { ...initialWidgetParams },
 		widget: null,
 	};
+
+	buttonDisabled() {
+		const vals = Object.values(this.state.widgetParams);
+		return vals.some(val => !val);
+	}
 
 	onChangeNumber = text => {
 		const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -65,6 +74,8 @@ class WidgetForm extends Component {
 			<View>
 				<ScrollView>
 					<BackButton onPress={e => this.props.back()} title="Back" />
+					{this.state.widget && <Header>Here's your widget!</Header>}
+					{this.state.widget}
 					<Label>Publisher</Label>
 					<CustomTextInput
 						value={publisher}
@@ -107,12 +118,13 @@ class WidgetForm extends Component {
 						onChangeText={this.onChangeNumber}
 						placeholder="300"
 					/>
-					<Button
+					<SubmitButton
+						disabled={this.buttonDisabled()}
 						onPress={e =>
 							this.setState({ widget: null }, () => {
 								this.setState(prevState => {
 									return {
-										...prevState,
+										widgetParams: { ...initialWidgetParams },
 										widget: (
 											<Widget
 												{...prevState.widgetParams}
@@ -125,7 +137,6 @@ class WidgetForm extends Component {
 						}
 						title="Submit"
 					/>
-					{this.state.widget}
 				</ScrollView>
 			</View>
 		);

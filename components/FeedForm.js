@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Button } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import Feed from './Feed';
 import CustomTextInput from './CustomTextInput';
 import Label from './styles/Label';
 import BackButton from './styles/BackButton';
 import SubmitButton from './styles/SubmitButton';
+import Header from './styles/Header';
 
 class FeedForm extends Component {
 	static propTypes = {
@@ -23,6 +24,11 @@ class FeedForm extends Component {
 		},
 		feed: null,
 	};
+
+	buttonDisabled() {
+		const vals = Object.values(this.state.feedParams);
+		return vals.some(val => !val);
+	}
 
 	setFeedParam(param) {
 		this.setState(prevState => {
@@ -51,6 +57,7 @@ class FeedForm extends Component {
 			<View>
 				<ScrollView>
 					<BackButton onPress={e => this.props.back()} title="Back" />
+					{this.state.feed && <Header>Scroll down to see your feed!</Header>}
 					<Label>Publisher</Label>
 					<CustomTextInput
 						value={publisher}
@@ -88,6 +95,7 @@ class FeedForm extends Component {
 						placeholder="targetType"
 					/>
 					<SubmitButton
+						disabled={this.buttonDisabled()}
 						onPress={e =>
 							this.setState({ feed: null }, () => {
 								this.setState(prevState => {
