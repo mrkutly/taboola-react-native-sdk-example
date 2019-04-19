@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Button } from 'react-native';
+import { View, ScrollView, Button, StyleSheet } from 'react-native';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { BackButton } from './ArticleWithFeed';
 import Widget from './Widget';
 
 const Input = styled.TextInput`
 	font-size: 20;
-	text-decoration-line: underline;
 `;
 
 const Label = styled.Text`
@@ -14,6 +14,10 @@ const Label = styled.Text`
 `;
 
 class WidgetForm extends Component {
+	static propTypes = {
+		back: PropTypes.func.isRequired,
+	};
+
 	state = {
 		widgetParams: {
 			publisher: '',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Widget from './Widget';
 import { BackButton } from './ArticleWithFeed';
 
@@ -32,15 +33,7 @@ const ArticleWithWidget = props => {
 					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 					culpa qui officia deserunt mollit anim id est laborum.
 				</StyledText>
-				<Widget
-					mode="alternating-widget-without-video-1-on-1"
-					publisher="sdk-tester"
-					pageType="article"
-					pageUrl="https://blog.taboola.com"
-					placement="Mid Article"
-					targetType="mix"
-					height={300}
-				/>
+				<Widget />
 				<StyledText>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -60,5 +53,7 @@ const ArticleWithWidget = props => {
 		</View>
 	);
 };
+
+ArticleWithWidget.propTypes = { back: PropTypes.func.isRequired };
 
 export default ArticleWithWidget;

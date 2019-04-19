@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, ScrollView } from 'react-native';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Feed from './Feed';
 
 export const BackButton = styled.Button`
@@ -54,5 +55,7 @@ const ArticleWithFeed = props => {
 		</View>
 	);
 };
+
+ArticleWithFeed.propTypes = { back: PropTypes.func.isRequired };
 
 export default ArticleWithFeed;

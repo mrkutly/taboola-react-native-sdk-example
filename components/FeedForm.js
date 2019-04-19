@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Button } from 'react-native';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { BackButton } from './ArticleWithFeed';
 import Feed from './Feed';
 
@@ -14,6 +15,10 @@ const Label = styled.Text`
 `;
 
 class FeedForm extends Component {
+	static propTypes = {
+		back: PropTypes.func.isRequired,
+	};
+
 	state = {
 		feedParams: {
 			publisher: '',

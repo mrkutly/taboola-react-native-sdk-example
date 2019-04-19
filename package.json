@@ -8,6 +8,7 @@
 	"dependencies": {
 		"@babel/runtime": "^7.4.3",
 		"@taboola/react-native-taboola": "^1.0.15",
+		"prop-types": "^15.7.2",
 		"react": "16.5.0",
 		"react-native": "0.57.1",
 		"styled-components": "^4.2.0"
