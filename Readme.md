@@ -1,6 +1,6 @@
 # Taboola React Native SDK Example App
 
-This is an example project of how how to implement the Taboola React Native plugin. It is a pretty straightforward integration, but there a few gotchas to watch out for.
+This is an example project of how how to implement the Taboola React Native plugin. It is a pretty straightforward integration, but there a few gotchas to watch out for:
 
 - 1. It is important that you set a static height for **RNTaboolaView** component. In our other SDK's, the widget integrations use a dynamic height while the feed integrations use a static height. For our RN plugin, both wiget and feed integrations use static height.
 
