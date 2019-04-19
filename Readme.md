@@ -4,7 +4,7 @@ This is an example project of how how to implement the Taboola React Native plug
 
 - 1. It is important that you set a static height for **RNTaboolaView** component. In our other SDK's, the widget integrations use a dynamic height while the feed integrations use a static height. For our RN plugin, both wiget and feed integrations use static height.
 
--2. In the current version of the RN plugin, we are only supporting one Taboola asset per page (either a widget or a feed). Our Native and JS SDK's support multiple assets currently and we expect support this for RN in the future.
+- 2. In the current version of the RN plugin, we are only supporting one Taboola asset per page (either a widget or a feed). Our Native and JS SDK's support multiple assets currently and we expect support this for RN in the future.
 
 ## Widget
 
