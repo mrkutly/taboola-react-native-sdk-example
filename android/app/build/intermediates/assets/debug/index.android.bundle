@@ -77586,20 +77586,25 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         fileName: _jsxFileName,
         lineNumber: 14
       }
-    }, "Here's some Taboola!"), _react.default.createElement(_StyledText.default, {
+    }, "Here's a Taboola Widget"), _react.default.createElement(_StyledText.default, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
       }
-    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), _react.default.createElement(_Widget.default, {
+    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), _react.default.createElement(_StyledText.default, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       }
+    }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), _react.default.createElement(_Widget.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      }
     }), _react.default.createElement(_StyledText.default, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 34
       }
     }, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?")));
   };
@@ -84791,7 +84796,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         fileName: _jsxFileName,
         lineNumber: 14
       }
-    }, "Here's some Taboola!"), _react.default.createElement(_StyledText.default, {
+    }, "Here's a Taboola Feed"), _react.default.createElement(_StyledText.default, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
@@ -85272,15 +85277,20 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
             fileName: _jsxFileName,
             lineNumber: 76
           }
-        }), this.state.widget && _react.default.createElement(_Header.default, {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 77
-          }
-        }, "Here's your widget!"), this.state.widget, _react.default.createElement(_Label.default, {
+        }), this.state.widget && _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Header.default, {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 79
+          }
+        }, "Here's your widget!"), _react.default.createElement(_reactNative.ScrollView, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80
+          }
+        }, this.state.widget)), _react.default.createElement(_Label.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83
           }
         }, "Publisher"), _react.default.createElement(_CustomTextInput.default, {
           value: publisher,
@@ -85292,12 +85302,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "sdk-tester",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 80
+            lineNumber: 84
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 85
+            lineNumber: 89
           }
         }, "Mode"), _react.default.createElement(_CustomTextInput.default, {
           value: mode,
@@ -85309,12 +85319,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "thumbnails-a",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 86
+            lineNumber: 90
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 91
+            lineNumber: 95
           }
         }, "Placement"), _react.default.createElement(_CustomTextInput.default, {
           value: placement,
@@ -85326,12 +85336,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "Mid Article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 96
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 97
+            lineNumber: 101
           }
         }, "Example Page Url"), _react.default.createElement(_CustomTextInput.default, {
           value: pageUrl,
@@ -85343,12 +85353,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "https://blog.taboola.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 98
+            lineNumber: 102
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 107
           }
         }, "Page Type"), _react.default.createElement(_CustomTextInput.default, {
           value: pageType,
@@ -85360,12 +85370,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 104
+            lineNumber: 108
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 109
+            lineNumber: 113
           }
         }, "Target Type"), _react.default.createElement(_CustomTextInput.default, {
           value: targetType,
@@ -85377,12 +85387,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "targetType",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 110
+            lineNumber: 114
           }
         }), _react.default.createElement(_Label.default, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 115
+            lineNumber: 119
           }
         }, "Height"), _react.default.createElement(_CustomTextInput.default, {
           value: height,
@@ -85390,7 +85400,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "300",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 120
           }
         }), _react.default.createElement(_SubmitButton.default, {
           disabled: this.buttonDisabled(),
@@ -85405,7 +85415,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
                     height: parseInt(prevState.widgetParams.height),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 129
+                      lineNumber: 133
                     }
                   }))
                 };
@@ -85415,7 +85425,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           title: "Submit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 121
+            lineNumber: 125
           }
         })));
       }
