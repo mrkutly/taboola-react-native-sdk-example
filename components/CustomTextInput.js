@@ -1,9 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledTextInput = styled.TextInput`
-	font-size: 20;
-`;
+import StyledTextInput from './styles/StyledTextInput';
 
 const CustomTextInput = props => (
 	<StyledTextInput autoCapitalize="none" {...props} />

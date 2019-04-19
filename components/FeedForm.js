@@ -5,6 +5,7 @@ import Feed from './Feed';
 import CustomTextInput from './CustomTextInput';
 import Label from './styles/Label';
 import BackButton from './styles/BackButton';
+import SubmitButton from './styles/SubmitButton';
 
 class FeedForm extends Component {
 	static propTypes = {
@@ -86,7 +87,7 @@ class FeedForm extends Component {
 						onChangeText={text => this.setFeedParam({ targetType: text })}
 						placeholder="targetType"
 					/>
-					<Button
+					<SubmitButton
 						onPress={e =>
 							this.setState({ feed: null }, () => {
 								this.setState(prevState => {

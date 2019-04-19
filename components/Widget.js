@@ -1,19 +1,26 @@
 import React from 'react';
+import { View, Platform } from 'react-native';
 import RNTaboolaView from '@taboola/react-native-taboola';
 import PropTypes from 'prop-types';
 
 const Widget = props => {
 	return (
-		<RNTaboolaView
-			mode={props.mode}
-			publisher={props.publisher}
-			pageType={props.pageType}
-			pageUrl={props.pageUrl}
-			placement={props.placement}
-			targetType={props.targetType}
-			scrollEnabled={false}
-			style={{ height: props.height }}
-		/>
+		<View
+			style={{ height: props.height + 20, flex: 1, justifyContent: 'center' }}
+		>
+			<RNTaboolaView
+				mode={props.mode}
+				publisher={props.publisher}
+				pageType={props.pageType}
+				pageUrl={props.pageUrl}
+				placement={props.placement}
+				targetType={props.targetType}
+				scrollEnabled={false}
+				style={{
+					height: props.height,
+				}}
+			/>
+		</View>
 	);
 };
 
@@ -24,7 +31,7 @@ Widget.defaultProps = {
 	pageUrl: 'https://blog.taboola.com',
 	placement: 'Mid Article',
 	targetType: 'mix',
-	height: 300,
+	height: Platform.OS === 'ios' ? 230 : 270,
 };
 
 Widget.propTypes = {
