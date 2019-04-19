@@ -22,11 +22,11 @@ export default class HomePage extends Component {
 					title="Feed Demo"
 				/>
 				<NavButton
-					onPress={e => this.props.setCurrentPage('TestWidgetForm')}
+					onPress={e => this.props.setCurrentPage('TestWidget')}
 					title="Test Your Widget Parameters"
 				/>
 				<NavButton
-					onPress={e => this.props.setCurrentPage('TestFeedForm')}
+					onPress={e => this.props.setCurrentPage('TestFeed')}
 					title="Test Your Feed Parameters"
 				/>
 			</View>

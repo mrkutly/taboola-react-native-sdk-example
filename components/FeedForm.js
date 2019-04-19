@@ -1,34 +1,41 @@
 import React, { Component } from 'react';
-import { TextInput, View, Button, Text } from 'react-native';
+import { View, ScrollView, Button } from 'react-native';
+import styled from 'styled-components';
+import { BackButton } from './ArticleWithFeed';
+import Feed from './Feed';
 
-class Feed extends Component {
+const Input = styled.TextInput`
+	font-size: 20;
+	text-decoration-line: underline;
+`;
+
+const Label = styled.Text`
+	font-size: 20;
+`;
+
+class FeedForm extends Component {
 	state = {
-		publisher: '',
-		mode: '',
-		placement: '',
-		pageUrl: '',
-		pageType: 'article',
-		targetType: 'mix',
-		height: '300',
+		feedParams: {
+			publisher: '',
+			mode: '',
+			placement: '',
+			pageUrl: '',
+			pageType: 'article',
+			targetType: 'mix',
+		},
+		feed: null,
 	};
 
-	onChangeNumber = text => {
-		const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-		let input = text.split('');
-		let valid = true;
-
-		input.forEach(num => {
-			if (!numbers.includes(num)) {
-				valid = false;
-			}
+	setFeedParam(param) {
+		this.setState(prevState => {
+			return {
+				...prevState,
+				feedParams: {
+					...prevState.feedParams,
+					...param,
+				},
+			};
 		});
-
-		if (valid) this.setState({ height: text });
-	};
-
-	submit() {
-		alert(JSON.stringify(this.state));
-		// this.props.setWidgetParams(this.state);
 	}
 
 	render() {
@@ -40,56 +47,66 @@ class Feed extends Component {
 			placement,
 			targetType,
 			height,
-		} = this.state;
+		} = this.state.feedParams;
 
 		return (
 			<View>
-				<Text>Publisher</Text>
-				<TextInput
-					value={publisher}
-					onChangeText={text => this.setState({ publisher: text })}
-					placeholder="sdk-tester"
-				/>
-				<Text>Mode</Text>
-				<TextInput
-					value={mode}
-					onChangeText={text => this.setState({ mode: text })}
-					placeholder="thumbnails-a"
-				/>
-				<Text>Placement</Text>
-				<TextInput
-					value={placement}
-					onChangeText={text => this.setState({ placement: text })}
-					placeholder="Mid Article"
-				/>
-				<Text>Example Page Url</Text>
-				<TextInput
-					value={pageUrl}
-					onChangeText={text => this.setState({ pageUrl: text })}
-					placeholder="https://blog.taboola.com"
-				/>
-				<Text>Page Type</Text>
-				<TextInput
-					value={pageType}
-					onChangeText={text => this.setState({ pageType: text })}
-					placeholder="article"
-				/>
-				<Text>Target Type</Text>
-				<TextInput
-					value={targetType}
-					onChangeText={text => this.setState({ targetType: text })}
-					placeholder="targetType"
-				/>
-				<Text>Height</Text>
-				<TextInput
-					value={height}
-					onChangeText={this.onChangeNumber}
-					placeholder="300"
-				/>
-				<Button onPress={e => this.submit()} title="Submit" />
+				<ScrollView>
+					<BackButton onPress={e => this.props.back()} title="Back" />
+					<Label>Publisher</Label>
+					<Input
+						value={publisher}
+						onChangeText={text => this.setFeedParam({ publisher: text })}
+						placeholder="sdk-tester"
+					/>
+					<Label>Mode</Label>
+					<Input
+						value={mode}
+						onChangeText={text => this.setFeedParam({ mode: text })}
+						placeholder="thumbnails-a"
+					/>
+					<Label>Placement</Label>
+					<Input
+						value={placement}
+						onChangeText={text => this.setFeedParam({ placement: text })}
+						placeholder="Feed with video"
+					/>
+					<Label>Example Page Url</Label>
+					<Input
+						value={pageUrl}
+						onChangeText={text => this.setFeedParam({ pageUrl: text })}
+						placeholder="https://blog.taboola.com"
+					/>
+					<Label>Page Type</Label>
+					<Input
+						value={pageType}
+						onChangeText={text => this.setFeedParam({ pageType: text })}
+						placeholder="article"
+					/>
+					<Label>Target Type</Label>
+					<Input
+						value={targetType}
+						onChangeText={text => this.setFeedParam({ targetType: text })}
+						placeholder="targetType"
+					/>
+					<Button
+						onPress={e =>
+							this.setState({ feed: null }, () => {
+								this.setState(prevState => {
+									return {
+										...prevState,
+										feed: <Feed {...prevState.feedParams} />,
+									};
+								});
+							})
+						}
+						title="Submit"
+					/>
+					{this.state.feed}
+				</ScrollView>
 			</View>
 		);
 	}
 }
 
-export default Feed;
+export default FeedForm;

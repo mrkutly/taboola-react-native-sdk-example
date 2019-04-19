@@ -77390,33 +77390,33 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   });
   exports.default = void 0;
 
-  var _extends2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/extends"));
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/classCallCheck"));
 
-  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/classCallCheck"));
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/createClass"));
 
-  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/createClass"));
+  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/possibleConstructorReturn"));
 
-  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/possibleConstructorReturn"));
+  var _getPrototypeOf3 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/getPrototypeOf"));
 
-  var _getPrototypeOf3 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/getPrototypeOf"));
+  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/inherits"));
 
-  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/inherits"));
+  var _taggedTemplateLiteralLoose2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/taggedTemplateLiteralLoose"));
 
-  var _taggedTemplateLiteralLoose2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/taggedTemplateLiteralLoose"));
+  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "react"));
 
-  var _react = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[8], "react"));
+  var _reactNative = _$$_REQUIRE(_dependencyMap[8], "react-native");
 
-  var _reactNative = _$$_REQUIRE(_dependencyMap[9], "react-native");
+  var _styledComponents = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[9], "styled-components"));
 
-  var _styledComponents = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[10], "styled-components"));
+  var _ArticleWithWidget = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[10], "./components/ArticleWithWidget"));
 
-  var _ArticleWithWidget = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[11], "./components/ArticleWithWidget"));
+  var _ArticleWithFeed = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[11], "./components/ArticleWithFeed"));
 
-  var _ArticleWithFeed = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12], "./components/ArticleWithFeed"));
+  var _HomePage = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12], "./components/HomePage"));
 
-  var _HomePage = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13], "./components/HomePage"));
+  var _WidgetForm = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[13], "./components/WidgetForm"));
 
-  var _WidgetForm = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14], "./components/WidgetForm"));
+  var _FeedForm = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14], "./components/FeedForm"));
 
   var _jsxFileName = "/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/App.js";
 
@@ -77448,9 +77448,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
       _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(App)).call.apply(_getPrototypeOf2, [this].concat(args)));
       _this.state = {
-        currentPage: 'home',
-        widgetParams: {},
-        feedParams: {}
+        currentPage: 'home'
       };
       return _this;
     }
@@ -77470,22 +77468,6 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         });
       }
     }, {
-      key: "setWidgetParams",
-      value: function setWidgetParams(widgetParams) {
-        this.setState({
-          widgetParams: widgetParams,
-          currentPage: 'WidgetTestPage'
-        });
-      }
-    }, {
-      key: "setWidgetParams",
-      value: function setWidgetParams(feedParams) {
-        this.setState({
-          currentPage: 'FeedTestPage',
-          feedParams: feedParams
-        });
-      }
-    }, {
       key: "renderSwitch",
       value: function renderSwitch() {
         var _this2 = this;
@@ -77498,7 +77480,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 41
+                lineNumber: 32
               }
             });
 
@@ -77509,35 +77491,31 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 43
+                lineNumber: 34
               }
             });
 
-          case 'TestWidgetForm':
+          case 'TestWidget':
             return _react.default.createElement(_WidgetForm.default, {
               back: function back() {
                 return _this2.back();
               },
-              setWidgetParams: function setWidgetParams(params) {
-                return _this2.setWidgetParams(params);
-              },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 46
+                lineNumber: 36
               }
             });
 
-          case 'WidgetTestPage':
-            return _react.default.createElement(WidgetTestPage, (0, _extends2.default)({
+          case 'TestFeed':
+            return _react.default.createElement(_FeedForm.default, {
               back: function back() {
                 return _this2.back();
-              }
-            }, this.state.widgetParams, {
+              },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 53
+                lineNumber: 38
               }
-            }));
+            });
 
           default:
             return _react.default.createElement(_HomePage.default, {
@@ -77546,7 +77524,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 59
+                lineNumber: 40
               }
             });
         }
@@ -77557,12 +77535,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         return _react.default.createElement(Container, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 46
           }
         }, _react.default.createElement(_reactNative.ScrollView, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 47
           }
         }, this.renderSwitch()));
       }
@@ -77572,7 +77550,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var _default = App;
   exports.default = _default;
-},381,[1,8,19,20,27,30,33,382,46,2,383,398,401,404,407],"App.js");
+},381,[1,19,20,27,30,33,382,46,2,383,398,401,404,407,408],"App.js");
 __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
   function _taggedTemplateLiteralLoose(strings, raw) {
     if (!raw) {
@@ -84814,12 +84792,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
 
   var Feed = function Feed(props) {
     return _react.default.createElement(_reactNativeTaboola.default, {
-      mode: "thumbs-feed-01",
-      publisher: "sdk-tester",
-      pageType: "article",
-      pageUrl: "https://blog.taboola.com",
-      placement: "Feed without video",
-      targetType: "mix",
+      mode: props.mode,
+      publisher: props.publisher,
+      pageType: props.pageType,
+      pageUrl: props.pageUrl,
+      placement: props.placement,
+      targetType: props.targetType,
       scrollEnabled: true,
       interceptScroll: true,
       style: {
@@ -84924,7 +84902,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           }
         }), _react.default.createElement(NavButton, {
           onPress: function onPress(e) {
-            return _this.props.setCurrentPage('TestWidgetForm');
+            return _this.props.setCurrentPage('TestWidget');
           },
           title: "Test Your Widget Parameters",
           __source: {
@@ -84933,7 +84911,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           }
         }), _react.default.createElement(NavButton, {
           onPress: function onPress(e) {
-            return _this.props.setCurrentPage('TestFeedForm');
+            return _this.props.setCurrentPage('TestFeed');
           },
           title: "Test Your Feed Parameters",
           __source: {
@@ -85121,13 +85099,13 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(WidgetForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
       _this.state = {
         widgetParams: {
-          publisher: 'sdk-tester',
-          mode: 'alternating-widget-without-video-1-on-1',
+          publisher: 'nbctodayappandroid',
+          mode: 'thumbnails-feed-mobile',
           placement: 'Mid Article',
-          pageUrl: 'https://blog.taboola.com',
+          pageUrl: 'https://www.today.com/video/columbine-20-years-later-survivors-open-up-about-moving-forward-1498273347606',
           pageType: 'article',
           targetType: 'mix',
-          height: '300'
+          height: '600'
         },
         widget: null
       };
@@ -85174,12 +85152,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
         return _react.default.createElement(_reactNative.View, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 69
           }
         }, _react.default.createElement(_reactNative.ScrollView, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 69
+            lineNumber: 70
           }
         }, _react.default.createElement(_ArticleWithFeed.BackButton, {
           onPress: function onPress(e) {
@@ -85188,12 +85166,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           title: "Back",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 71
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 72
           }
         }, "Publisher"), _react.default.createElement(Input, {
           value: publisher,
@@ -85205,12 +85183,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "sdk-tester",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 72
+            lineNumber: 73
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 78
           }
         }, "Mode"), _react.default.createElement(Input, {
           value: mode,
@@ -85222,12 +85200,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "thumbnails-a",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 78
+            lineNumber: 79
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 84
           }
         }, "Placement"), _react.default.createElement(Input, {
           value: placement,
@@ -85239,12 +85217,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "Mid Article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 84
+            lineNumber: 85
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 89
+            lineNumber: 90
           }
         }, "Example Page Url"), _react.default.createElement(Input, {
           value: pageUrl,
@@ -85256,12 +85234,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "https://blog.taboola.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 91
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 95
+            lineNumber: 96
           }
         }, "Page Type"), _react.default.createElement(Input, {
           value: pageType,
@@ -85273,12 +85251,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "article",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 96
+            lineNumber: 97
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 101
+            lineNumber: 102
           }
         }, "Target Type"), _react.default.createElement(Input, {
           value: targetType,
@@ -85290,12 +85268,12 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "targetType",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 102
+            lineNumber: 103
           }
         }), _react.default.createElement(Label, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 107
+            lineNumber: 108
           }
         }, "Height"), _react.default.createElement(Input, {
           value: height,
@@ -85303,7 +85281,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           placeholder: "300",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 108
+            lineNumber: 109
           }
         }), _react.default.createElement(_reactNative.Button, {
           onPress: function onPress(e) {
@@ -85316,7 +85294,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
                     height: parseInt(prevState.widgetParams.height),
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 120
+                      lineNumber: 121
                     }
                   }))
                 });
@@ -85326,7 +85304,7 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
           title: "Submit",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 114
           }
         }), this.state.widget));
       }
@@ -85337,5 +85315,270 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
   var _default = WidgetForm;
   exports.default = _default;
 },407,[1,402,8,43,19,20,27,30,33,382,46,2,383,401,399],"components/WidgetForm.js");
+__d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, exports, _dependencyMap) {
+  var _interopRequireDefault = _$$_REQUIRE(_dependencyMap[0], "@babel/runtime/helpers/interopRequireDefault");
+
+  var _interopRequireWildcard = _$$_REQUIRE(_dependencyMap[1], "@babel/runtime/helpers/interopRequireWildcard");
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _extends2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[2], "@babel/runtime/helpers/extends"));
+
+  var _objectSpread2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[3], "@babel/runtime/helpers/objectSpread"));
+
+  var _classCallCheck2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[4], "@babel/runtime/helpers/classCallCheck"));
+
+  var _createClass2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[5], "@babel/runtime/helpers/createClass"));
+
+  var _possibleConstructorReturn2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[6], "@babel/runtime/helpers/possibleConstructorReturn"));
+
+  var _getPrototypeOf3 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[7], "@babel/runtime/helpers/getPrototypeOf"));
+
+  var _inherits2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[8], "@babel/runtime/helpers/inherits"));
+
+  var _taggedTemplateLiteralLoose2 = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[9], "@babel/runtime/helpers/taggedTemplateLiteralLoose"));
+
+  var _react = _interopRequireWildcard(_$$_REQUIRE(_dependencyMap[10], "react"));
+
+  var _reactNative = _$$_REQUIRE(_dependencyMap[11], "react-native");
+
+  var _styledComponents = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[12], "styled-components"));
+
+  var _ArticleWithFeed = _$$_REQUIRE(_dependencyMap[13], "./ArticleWithFeed");
+
+  var _Feed = _interopRequireDefault(_$$_REQUIRE(_dependencyMap[14], "./Feed"));
+
+  var _jsxFileName = "/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/components/FeedForm.js";
+
+  function _templateObject2() {
+    var data = (0, _taggedTemplateLiteralLoose2.default)(["\n\tfont-size: 20;\n"]);
+
+    _templateObject2 = function _templateObject2() {
+      return data;
+    };
+
+    return data;
+  }
+
+  function _templateObject() {
+    var data = (0, _taggedTemplateLiteralLoose2.default)(["\n\tfont-size: 20;\n\ttext-decoration-line: underline;\n"]);
+
+    _templateObject = function _templateObject() {
+      return data;
+    };
+
+    return data;
+  }
+
+  var Input = _styledComponents.default.TextInput(_templateObject());
+
+  var Label = _styledComponents.default.Text(_templateObject2());
+
+  var FeedForm = function (_Component) {
+    (0, _inherits2.default)(FeedForm, _Component);
+
+    function FeedForm() {
+      var _getPrototypeOf2;
+
+      var _this;
+
+      (0, _classCallCheck2.default)(this, FeedForm);
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      _this = (0, _possibleConstructorReturn2.default)(this, (_getPrototypeOf2 = (0, _getPrototypeOf3.default)(FeedForm)).call.apply(_getPrototypeOf2, [this].concat(args)));
+      _this.state = {
+        feedParams: {
+          publisher: 'nbctodayappandroid',
+          mode: 'thumbnails-feed-mobile',
+          placement: 'App Below Article Thumbnails',
+          pageUrl: 'https://www.today.com/video/columbine-20-years-later-survivors-open-up-about-moving-forward-1498273347606',
+          pageType: 'article',
+          targetType: 'mix'
+        },
+        feed: null
+      };
+      return _this;
+    }
+
+    (0, _createClass2.default)(FeedForm, [{
+      key: "setFeedParam",
+      value: function setFeedParam(param) {
+        this.setState(function (prevState) {
+          return (0, _objectSpread2.default)({}, prevState, {
+            feedParams: (0, _objectSpread2.default)({}, prevState.feedParams, param)
+          });
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        var _this$state$feedParam = this.state.feedParams,
+            publisher = _this$state$feedParam.publisher,
+            mode = _this$state$feedParam.mode,
+            pageType = _this$state$feedParam.pageType,
+            pageUrl = _this$state$feedParam.pageUrl,
+            placement = _this$state$feedParam.placement,
+            targetType = _this$state$feedParam.targetType,
+            height = _this$state$feedParam.height;
+        return _react.default.createElement(_reactNative.View, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 54
+          }
+        }, _react.default.createElement(_reactNative.ScrollView, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 55
+          }
+        }, _react.default.createElement(_ArticleWithFeed.BackButton, {
+          onPress: function onPress(e) {
+            return _this2.props.back();
+          },
+          title: "Back",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 56
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57
+          }
+        }, "Publisher"), _react.default.createElement(Input, {
+          value: publisher,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              publisher: text
+            });
+          },
+          placeholder: "sdk-tester",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 63
+          }
+        }, "Mode"), _react.default.createElement(Input, {
+          value: mode,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              mode: text
+            });
+          },
+          placeholder: "thumbnails-a",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 69
+          }
+        }, "Placement"), _react.default.createElement(Input, {
+          value: placement,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              placement: text
+            });
+          },
+          placeholder: "Mid Article",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 70
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 75
+          }
+        }, "Example Page Url"), _react.default.createElement(Input, {
+          value: pageUrl,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              pageUrl: text
+            });
+          },
+          placeholder: "https://blog.taboola.com",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 81
+          }
+        }, "Page Type"), _react.default.createElement(Input, {
+          value: pageType,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              pageType: text
+            });
+          },
+          placeholder: "article",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 82
+          }
+        }), _react.default.createElement(Label, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 87
+          }
+        }, "Target Type"), _react.default.createElement(Input, {
+          value: targetType,
+          onChangeText: function onChangeText(text) {
+            return _this2.setFeedParam({
+              targetType: text
+            });
+          },
+          placeholder: "targetType",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 88
+          }
+        }), _react.default.createElement(_reactNative.Button, {
+          onPress: function onPress(e) {
+            return _this2.setState({
+              feed: null
+            }, function () {
+              _this2.setState(function (prevState) {
+                return (0, _objectSpread2.default)({}, prevState, {
+                  feed: _react.default.createElement(_Feed.default, (0, _extends2.default)({}, prevState.feedParams, {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 99
+                    }
+                  }))
+                });
+              });
+            });
+          },
+          title: "Submit",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 93
+          }
+        }), this.state.feed));
+      }
+    }]);
+    return FeedForm;
+  }(_react.Component);
+
+  var _default = FeedForm;
+  exports.default = _default;
+},408,[1,402,8,43,19,20,27,30,33,382,46,2,383,401,403],"components/FeedForm.js");
 __r(85);
 __r(0);

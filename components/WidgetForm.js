@@ -16,13 +16,13 @@ const Label = styled.Text`
 class WidgetForm extends Component {
 	state = {
 		widgetParams: {
-			publisher: 'sdk-tester',
-			mode: 'alternating-widget-without-video-1-on-1',
-			placement: 'Mid Article',
-			pageUrl: 'https://blog.taboola.com',
+			publisher: '',
+			mode: '',
+			placement: '',
+			pageUrl: '',
 			pageType: 'article',
 			targetType: 'mix',
-			height: '300',
+			height: '600',
 		},
 		widget: null,
 	};

@@ -5,6 +5,7 @@ import ArticleWithWidget from './components/ArticleWithWidget';
 import ArticleWithFeed from './components/ArticleWithFeed';
 import HomePage from './components/HomePage';
 import WidgetForm from './components/WidgetForm';
+import FeedForm from './components/FeedForm';
 
 const Container = styled.View`
 	background-color: #fff;
@@ -15,8 +16,6 @@ const Container = styled.View`
 class App extends React.Component {
 	state = {
 		currentPage: 'home',
-		widgetParams: {},
-		feedParams: {},
 	};
 
 	back() {
@@ -27,34 +26,16 @@ class App extends React.Component {
 		this.setState({ currentPage });
 	}
 
-	setWidgetParams(widgetParams) {
-		this.setState({ widgetParams, currentPage: 'WidgetTestPage' });
-	}
-
-	setWidgetParams(feedParams) {
-		this.setState({ currentPage: 'FeedTestPage', feedParams });
-	}
-
 	renderSwitch() {
 		switch (this.state.currentPage) {
 			case 'WidgetDemo':
 				return <ArticleWithWidget back={() => this.back()} />;
 			case 'FeedDemo':
 				return <ArticleWithFeed back={() => this.back()} />;
-			case 'TestWidgetForm':
-				return (
-					<WidgetForm
-						back={() => this.back()}
-						setWidgetParams={params => this.setWidgetParams(params)}
-					/>
-				);
-			case 'WidgetTestPage':
-				return (
-					<WidgetTestPage
-						back={() => this.back()}
-						{...this.state.widgetParams}
-					/>
-				);
+			case 'TestWidget':
+				return <WidgetForm back={() => this.back()} />;
+			case 'TestFeed':
+				return <FeedForm back={() => this.back()} />;
 			default:
 				return <HomePage setCurrentPage={page => this.setCurrentPage(page)} />;
 		}

@@ -3,12 +3,12 @@ import RNTaboolaView from '@taboola/react-native-taboola';
 
 const Feed = props => (
 	<RNTaboolaView
-		mode="thumbs-feed-01"
-		publisher="sdk-tester"
-		pageType="article"
-		pageUrl="https://blog.taboola.com"
-		placement="Feed without video"
-		targetType="mix"
+		mode={props.mode}
+		publisher={props.publisher}
+		pageType={props.pageType}
+		pageUrl={props.pageUrl}
+		placement={props.placement}
+		targetType={props.targetType}
 		scrollEnabled={true}
 		interceptScroll={true}
 		style={{ height: 2000 }}
