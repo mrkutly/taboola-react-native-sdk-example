@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, Platform } from 'react-native';
+import { View, Platform } from 'react-native';
 import RNTaboolaView from '@taboola/react-native-taboola';
 import PropTypes from 'prop-types';
 
@@ -18,6 +18,31 @@ const Widget = props => {
 				scrollEnabled={false}
 				style={{
 					height: props.height,
+					width: '100%',
+				}}
+				onDidLoad={event => {
+					console.warn(
+						'onDidLoad : ' +
+							event.nativeEvent.placementName +
+							'- height -: ' +
+							event.nativeEvent.height
+					);
+				}}
+				onDidFailToLoad={event => {
+					console.warn(
+						'onRenderFail placementName: ' + event.nativeEvent.placementName
+					);
+					console.warn('onRenderFail error: ' + event.nativeEvent.error);
+				}}
+				onOrganicItemClick={event => {
+					console.warn('onOrganicItemClick ' + event.nativeEvent.itemId);
+					console.warn('url: ' + event.nativeEvent.clickUrl);
+					console.warn('name: ' + event.nativeEvent.placementName);
+				}}
+				onAdItemClick={event => {
+					console.warn('onAdItemClick  ' + event.nativeEvent.itemId);
+					console.warn('url : ' + event.nativeEvent.clickUrl);
+					console.warn('name : ' + event.nativeEvent.placementName);
 				}}
 			/>
 		</View>
@@ -31,7 +56,7 @@ Widget.defaultProps = {
 	pageUrl: 'https://blog.taboola.com',
 	placement: 'Mid Article',
 	targetType: 'mix',
-	height: Platform.OS === 'ios' ? 230 : 270,
+	height: Platform.OS === 'ios' ? 260 : 270,
 };
 
 Widget.propTypes = {

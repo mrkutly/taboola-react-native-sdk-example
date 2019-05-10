@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView } from 'react-native';
 import ArticleWithWidget from './components/ArticleWithWidget';
 import ArticleWithFeed from './components/ArticleWithFeed';
+import ArticleWithWidgetAndFeed from './components/ArticleWithWidgetAndFeed';
 import HomePage from './components/HomePage';
 import WidgetForm from './components/WidgetForm';
 import FeedForm from './components/FeedForm';
@@ -26,6 +27,8 @@ class App extends React.Component {
 				return <ArticleWithWidget back={() => this.back()} />;
 			case 'FeedDemo':
 				return <ArticleWithFeed back={() => this.back()} />;
+			case 'WidgetAndFeedDemo':
+				return <ArticleWithWidgetAndFeed back={() => this.back()} />;
 			case 'TestWidget':
 				return <WidgetForm back={() => this.back()} />;
 			case 'TestFeed':

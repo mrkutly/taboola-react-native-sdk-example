@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>C4AD3547-8717-45D9-B382-924FD4A234F4</key>
+		<key>DB7869A4-5449-43E1-9BC5-1533B2AE5DD7</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C4AD3547-8717-45D9-B382-924FD4A234F4.xcactivitylog</string>
+			<string>DB7869A4-5449-43E1-9BC5-1533B2AE5DD7.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>W</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,13 @@
 			<key>signature</key>
 			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>577721203.69201505</real>
+			<real>579187108.30145395</real>
 			<key>timeStoppedRecording</key>
-			<real>577721223.02653694</real>
+			<real>579187120.18022597</real>
 			<key>title</key>
 			<string>Building workspace taboola with scheme taboola and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>C4AD3547-8717-45D9-B382-924FD4A234F4</string>
+			<string>DB7869A4-5449-43E1-9BC5-1533B2AE5DD7</string>
 		</dict>
 	</dict>
 </dict>

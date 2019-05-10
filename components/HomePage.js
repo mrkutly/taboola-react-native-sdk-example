@@ -17,6 +17,10 @@ export default class HomePage extends Component {
 					title="Feed Demo"
 				/>
 				<NavButton
+					onPress={e => this.props.setCurrentPage('WidgetAndFeedDemo')}
+					title="Widget and Feed Demo"
+				/>
+				<NavButton
 					onPress={e => this.props.setCurrentPage('TestWidget')}
 					title="Test Your Widget Parameters"
 				/>

@@ -1,4 +1,4 @@
-#Fri Apr 19 15:32:33 EDT 2019
+#Thu May 09 14:22:50 EDT 2019
 base.0=/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/android/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex

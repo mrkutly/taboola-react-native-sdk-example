@@ -50,7 +50,6 @@ class FeedForm extends Component {
 			pageUrl,
 			placement,
 			targetType,
-			height,
 		} = this.state.feedParams;
 
 		return (
