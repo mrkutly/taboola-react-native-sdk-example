@@ -3,24 +3,28 @@ import { View, Platform } from 'react-native';
 import RNTaboolaView from '@taboola/react-native-taboola';
 import PropTypes from 'prop-types';
 
-const Widget = props => {
-	return (
-		<View
-			style={{ height: props.height + 20, flex: 1, justifyContent: 'center' }}
-		>
+class Widget extends React.Component {
+	state = { height: 0 };
+	render() {
+		return (
+			// <View
+			// 	style={{ height: this.state.height, flex: 1, justifyContent: 'center' }}
+			// >
 			<RNTaboolaView
-				mode={props.mode}
-				publisher={props.publisher}
-				pageType={props.pageType}
-				pageUrl={props.pageUrl}
-				placement={props.placement}
-				targetType={props.targetType}
+				mode={this.props.mode}
+				publisher={this.props.publisher}
+				pageType={this.props.pageType}
+				pageUrl={this.props.pageUrl}
+				placement={this.props.placement}
+				targetType={this.props.targetType}
 				scrollEnabled={false}
 				style={{
-					height: props.height,
+					height: this.state.height,
 					width: '100%',
 				}}
 				onDidLoad={event => {
+					// Set the height of the widget dynamically
+					this.setState({ height: event.nativeEvent.height });
 					console.warn(
 						'onDidLoad : ' +
 							event.nativeEvent.placementName +
@@ -45,9 +49,10 @@ const Widget = props => {
 					console.warn('name : ' + event.nativeEvent.placementName);
 				}}
 			/>
-		</View>
-	);
-};
+			// </View>
+		);
+	}
+}
 
 Widget.defaultProps = {
 	mode: 'alternating-widget-without-video-1-on-1',
@@ -56,7 +61,6 @@ Widget.defaultProps = {
 	pageUrl: 'https://blog.taboola.com',
 	placement: 'Mid Article',
 	targetType: 'mix',
-	height: Platform.OS === 'ios' ? 260 : 270,
 };
 
 Widget.propTypes = {
@@ -66,7 +70,6 @@ Widget.propTypes = {
 	pageUrl: PropTypes.string.isRequired,
 	placement: PropTypes.string.isRequired,
 	targetType: PropTypes.string.isRequired,
-	height: PropTypes.number.isRequired,
 };
 
 export default Widget;
