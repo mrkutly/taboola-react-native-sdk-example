@@ -2,15 +2,13 @@
 
 This is an example project of how how to implement the Taboola React Native plugin. It is a pretty straightforward integration, but there a few gotchas to watch out for:
 
-- 1. It is important that you set a static height for **RNTaboolaView** component. In our other SDK's, the widget integrations use a dynamic height while the feed integrations use a static height. For our RN plugin, both wiget and feed integrations use static height.
+- 1. For a widget, it is important that you set the height of the **RNTaboolaView** dynamically using the **onDidLoad()** event handler. The easiest way to do this is to set the widget height in the component's state. See **components > Widget.js** for this example.. If you are using Taboola Feed, it is important that the height is set to 2x the height of the viewport. See **components > Feed.js** for this example.
 
-- 2. In the current version of the RN plugin, we are only supporting one Taboola asset per page (either a widget or a feed). Our Native and JS SDK's support multiple assets currently and we expect support this for RN in the future.
-
-- 3. The **RNTaboolaView** is a native component and is therefore not supported in Expo. If you are building your project using Expo, you will have to eject it and then begin the Taboola integration.
+- 2. The **RNTaboolaView** is a native component and is therefore not supported in Expo. If you are building your project using Expo, you will have to eject it and then begin the Taboola integration.
 
 ## Widget
 
-To see an example of a widget integration, check the file **components > Widget.js**. When you sign up for the RN beta and begin the integration process, you will be provided with your own parameters to use as the props for the **RNTaboolaView** component.
+To see an example of a widget integration, check the file **components > Widget.js**. When you sign up for the RN beta and begin the integration process, you will be provided with your own parameters to use as the props for the **RNTaboolaView** component. You can also see an example of the Widget rendered in a FlatList in **components > WidgetInFlatList.js**.
 
 ## Feed
 
