@@ -20,7 +20,7 @@ To see an example of a feed integration, check the file **components > Feed.js**
 
 If you would like to test out your widget or feed params that were provided to you by Taboola before beginning your integration, you can:
 
-- 1. clone down this repo
+- 1. clone down this repo and navigate to the project's root directory
 - 2. run `npm install` from your terminal
 - 3. To test your params: - for iOS, make sure you have Xcode installed, then run `npm run ios` from your terminal - for android, make sure you have an Android Virtual Device installed **and running**, then run `npm run android-linux` from your terminal
      -4. Once the app is running in your simulator, you can select either _Test your widget params_ or _Test your feed params_ and fill out the form with the parameters provided to you by Taboola.
