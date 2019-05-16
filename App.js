@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import ArticleWithWidget from './components/ArticleWithWidget';
+import ArticleWithWidgetInFlatList from './components/ArticleWithWidgetInFlatList';
 import ArticleWithFeed from './components/ArticleWithFeed';
 import ArticleWithWidgetAndFeed from './components/ArticleWithWidgetAndFeed';
 import HomePage from './components/HomePage';
@@ -25,6 +26,8 @@ class App extends React.Component {
 		switch (this.state.currentPage) {
 			case 'WidgetDemo':
 				return <ArticleWithWidget back={() => this.back()} />;
+			case 'WidgetInFlatListDemo':
+				return <ArticleWithWidgetInFlatList back={() => this.back()} />;
 			case 'FeedDemo':
 				return <ArticleWithFeed back={() => this.back()} />;
 			case 'WidgetAndFeedDemo':

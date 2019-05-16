@@ -13,6 +13,10 @@ export default class HomePage extends Component {
 					title="Widget Demo"
 				/>
 				<NavButton
+					onPress={e => this.props.setCurrentPage('WidgetInFlatListDemo')}
+					title="Widget In FlatList Demo"
+				/>
+				<NavButton
 					onPress={e => this.props.setCurrentPage('FeedDemo')}
 					title="Feed Demo"
 				/>
