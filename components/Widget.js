@@ -7,9 +7,6 @@ class Widget extends React.Component {
 	state = { height: 0 };
 	render() {
 		return (
-			// <View
-			// 	style={{ height: this.state.height, flex: 1, justifyContent: 'center' }}
-			// >
 			<RNTaboolaView
 				mode={this.props.mode}
 				publisher={this.props.publisher}
@@ -49,7 +46,6 @@ class Widget extends React.Component {
 					console.warn('name : ' + event.nativeEvent.placementName);
 				}}
 			/>
-			// </View>
 		);
 	}
 }
