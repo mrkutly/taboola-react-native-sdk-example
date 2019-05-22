@@ -64,12 +64,10 @@
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTabBarManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTScrollView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTScrollViewManager.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCSamplingProfiler.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSurfaceRootView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTManagedPointer.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTWrapperViewController.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTReloadCommand.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/JSCTracing.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTInspector.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTAccessibilityManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTDevLoadingView.o
@@ -88,15 +86,12 @@
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTouchHandler.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTErrorInfo.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTLog.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavItemManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTParserUtils.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSafeAreaViewLocalData.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTPlatform.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/InspectorInterfaces.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTScrollContentView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTKeyboardObserver.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCHelpers.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTI18nManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTPackagerConnection.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTConvert+CoreLocation.o
@@ -118,7 +113,6 @@
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTabBarItem.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModalHostView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSurfaceSizeMeasureMode.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/PrivateDataBase.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTProfileTrampoline-arm.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSegmentedControlManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTPickerManager.o
@@ -127,13 +121,10 @@
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTBundleURLProvider.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTActivityIndicatorView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTLayoutAnimationGroup.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavigator.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTabBar.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRedBox.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCErrorHandling.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSafeAreaView.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModalHostViewController.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavItem.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTEventDispatcher.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModalHostViewManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTUIManager.o
@@ -141,6 +132,5 @@
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTouchEvent.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTProfile.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTComponentData.o
-/Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavigatorManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModalManager.o
 /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Intermediates.noindex/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTUIUtils.o

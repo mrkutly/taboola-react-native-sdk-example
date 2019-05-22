@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mark.sauer.utley/.rvm/gems/ruby-2.3.1/bin:/Users/mark.sauer.utley/.rvm/gems/ruby-2.3.1@global/bin:/Users/mark.sauer.utley/.rvm/rubies/ruby-2.3.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mark.sauer.utley/.rvm/gems/ruby-2.3.1/bin:/Users/mark.sauer.utley/.rvm/gems/ruby-2.3.1@global/bin:/Users/mark.sauer.utley/.rvm/rubies/ruby-2.3.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/sbin:/usr/local/Cellar/maven/3.5.0/libexec/bin:/Users/mark.sauer.utley/.rvm/bin:/Users/mark.sauer.utley/.npm/bin:/usr/local/Cellar/maven/3.5.0/libexec/bin:/Users/mark.sauer.utley/.npm/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/package.json: Unexpected string in JSON at position 753
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.15.2/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+  	"scripts": {
+  		"start": "react-native start",
+  		"android": "react-native run-android",
+  		"android-linux": "react-native bundle --platform android --dev true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle - assets-dest android/app/src/main/res && react-native run-android",
+  		"ios": "react-native run-ios",
+  		"test": "jest"
+  	},
+  	"dependencies": {
+  		"@taboola/react-native-taboola": "^1.0.20",
+  		"react": "16.6.3",
+  		"react-native": "0.58.5",
+  		"react-native-config": "^0.11.7"
+  	},
+  	"devDependencies": {
+  		"babel-core": "^7.0.0-bridge.0",
+  		"babel-jest": "24.1.0",
+  		"jest": "24.1.0",
+  		"metro-react-native-babel-preset": "0.52.0",
+  		"react-test-renderer": "16.6.3"
+  	},
+  	"jest": {
+  		"preset": "react-native"
+  	}
+  	"private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -8,11 +8,8 @@ dependencies: \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTBridgeModule.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTFrameUpdate.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTBridge+Private.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTLog.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTAssert.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTUtils.h \

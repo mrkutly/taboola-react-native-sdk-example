@@ -3,8 +3,6 @@ dependencies: \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTDefines.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTBridge.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
   /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/React/Base/RCTBridgeModule.h \

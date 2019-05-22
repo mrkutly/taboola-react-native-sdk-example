@@ -18,7 +18,7 @@ const Widget = props => {
 		<View style={{ flex: 1, justifyContent: 'center' }}>
 			<FlatList
 				style={{ flex: 1 }}
-				data={[{ key: 'a' }, { key: 'b' }, { key: 'c' }, { key: 'd' }]}
+				data={[{ key: 'a' }]}
 				renderItem={({ item }) => (
 					<RNTaboolaView
 						mode={mode}

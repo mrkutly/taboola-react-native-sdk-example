@@ -1,3 +1,42 @@
 dependencies: \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2016.10.31.00/folly/Unicode.cpp \
-  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2016.10.31.00/folly/Unicode.h
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Unicode.cpp \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Unicode.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Conv.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/double-conversion/double-conversion.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/ios/build/Build/Products/Debug-iphonesimulator/include/double-conversion/utils.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/FBString.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/Hash.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV1.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV2.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/Malloc.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/detail/MallocImpl.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Expected.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Likely.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Optional.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Unit.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/ColdClass.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Range.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Constexpr.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/String.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CpuId.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/detail/RangeCommon.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/glog-0.3.5/exported/glog/logging.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/glog-0.3.5/exported/glog/log_severity.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/glog-0.3.5/exported/glog/vlog_is_on.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/detail/RangeSse42.h \
+  /Users/mark.sauer.utley/Development/taboola-react-native-sdk-example/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Math.h
